@@ -1,57 +1,58 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Core SEO Meta Tags -->
-    <title>Monster Survivors - Free Online Roguelike Survival Game | WeaponsGame.online</title>
-    <meta name="description" content="Play Monster Survivors for free online! Face hordes of monsters, upgrade your weapons, and see how long you can survive in this intense roguelike action game.">
+    <!-- SEO核心标签 -->
+    <title>Kingdom Battle 3D - Free Online Strategy Game | WeaponsGame.online</title>
+    <meta name="description" content="Lead your troops to victory in Kingdom Battle 3D! A free-to-play online strategy game where you command armies and conquer castles. Play now on WeaponsGame.online.">
     <link rel="canonical" href="https://weaponsgame.online/">
     
-    <!-- Keywords -->
-    <meta name="keywords" content="monster survivors, online game, free game, roguelike, survival game, browser game, action game, weaponsgame.online">
+    <!-- 关键词 -->
+    <meta name="keywords" content="kingdom battle 3d, online game, free game, strategy game, 3d game, browser game, weaponsgame.online">
 
-    <!-- Open Graph & Twitter Meta Tags for Social Sharing -->
+    <!-- 用于社交媒体分享的Open Graph / Twitter 标签 -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://weaponsgame.online/">
-    <meta property="og:title" content="Monster Survivors - Free Online Roguelike Survival Game">
-    <meta property="og:description" content="Face the horde, upgrade your arsenal, and survive the chaos in this thrilling free-to-play monster survival game!">
-    <meta property="og:image" content="https://placehold.co/1200x630/0a0a0a/ffffff?text=Monster+Survivors">
+    <meta property="og:title" content="Kingdom Battle 3D - Free Online Strategy Game">
+    <meta property="og:description" content="Command your stickman army, conquer enemy castles, and claim victory in this epic 3D strategy battle!">
+    <!-- 待办：请替换为一个真实的游戏截图URL -->
+    <meta property="og:image" content="https://placehold.co/1200x630/2E5C85/FFFFFF?text=Kingdom+Battle+3D">
 
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://weaponsgame.online/">
-    <meta property="twitter:title" content="Monster Survivors - Free Online Roguelike Survival Game">
-    <meta property="twitter:description" content="Face the horde, upgrade your arsenal, and survive the chaos in this thrilling free-to-play monster survival game!">
-    <meta property="twitter:image" content="https://placehold.co/1200x630/0a0a0a/ffffff?text=Monster+Survivors">
+    <meta property="twitter:title" content="Kingdom Battle 3D - Free Online Strategy Game">
+    <meta property="twitter:description" content="Command your stickman army, conquer enemy castles, and claim victory in this epic 3D strategy battle!">
+    <!-- 待办：请替换为一个真实的游戏截图URL -->
+    <meta property="twitter:image" content="https://placehold.co/1200x630/2E5C85/FFFFFF?text=Kingdom+Battle+3D">
 
-    <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👹</text></svg>">
+    <!-- 网站图标 (Favicon) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚔️</text></svg>">
 
-    <!-- Tailwind CSS CDN -->
+    <!-- 通过CDN加载Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Google Font 'Inter' -->
+    <!-- 谷歌字体 'Inter' (苹果风格) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <style>
+        /* 全局应用 'Inter' 字体并设置平滑滚动 */
         html {
             scroll-behavior: smooth;
         }
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #0a0e1a; /* A deep, dark blue background */
-            background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.05) 1px, transparent 0);
-            background-size: 20px 20px;
         }
-        /* Custom style for iframe wrapper */
+        /* 自定义iframe容器样式，以保持16:9的宽高比 */
         .iframe-container {
             position: relative;
             width: 100%;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            padding-bottom: 56.25%; /* 16:9 宽高比 */
             height: 0;
+            overflow: hidden;
         }
         .iframe-container iframe {
             position: absolute;
@@ -59,102 +60,97 @@
             left: 0;
             width: 100%;
             height: 100%;
+            border: 0;
         }
     </style>
 
 </head>
-<body class="text-gray-200 antialiased">
+<body class="bg-slate-50 text-slate-800">
 
-    <!-- Main Content Container -->
+    <!-- 主内容容器，设置最大宽度和内外边距以实现响应式 -->
     <div class="container mx-auto max-w-5xl px-4 py-8 md:py-12">
         
-        <!-- Header Section -->
-        <header class="text-center mb-8 md:mb-12">
-            <h1 class="text-5xl md:text-7xl font-black text-white tracking-tighter uppercase">
-                Monster Survivors
+        <!-- 头部区域：包含主标题 (H1) 和介绍性句子 -->
+        <header class="text-center mb-8 md:mb-10">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 tracking-tight">
+                Kingdom Battle 3D
             </h1>
-            <p class="mt-4 text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
-                Face the horde, upgrade your arsenal, and survive the chaos in this thrilling free-to-play monster survival game!
+            <p class="mt-3 md:mt-4 text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
+                Command your stickman army, conquer enemy castles, and claim victory in this epic 3D strategy battle!
             </p>
         </header>
 
-        <!-- Game Iframe Section -->
-        <section id="game-section" class="mb-8 md:mb-12">
-            <!-- Glowing effect container for the iframe -->
-            <div class="iframe-container rounded-xl shadow-2xl shadow-blue-500/20 overflow-hidden border-2 border-slate-700">
+        <!-- 游戏Iframe区域：页面的核心 -->
+        <section id="game-section" class="mb-8 md:mb-10">
+            <!-- 用于响应式iframe的容器 -->
+            <div class="iframe-container bg-slate-900 rounded-xl shadow-2xl">
                 <iframe 
-                    src=""https://www.miniplay.com/game/tekken-3" 
-                    title="Monster Survivors Online Game"
-                    allow="fullscreen"
-                    allowfullscreen
-                    frameborder="0">
+                    src="https://cloud.onlinegames.io/games/2025/unity2/kingdom-battle-3d/index-og.html"
+                    title="Kingdom Battle 3D Online Game"
+                    allowfullscreen>
                 </iframe>
             </div>
-            <div class="text-center mt-6">
-                 <button onclick="document.querySelector('iframe').requestFullscreen()" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-500 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-400/50 shadow-lg transform hover:scale-105">
-                    Enter Fullscreen
+            <!-- 全屏按钮以提升用户体验 -->
+            <div class="text-center mt-4">
+                 <button onclick="document.querySelector('iframe').requestFullscreen()" class="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300 focus:outline-none focus:ring-4 focus:ring-blue-300 shadow-lg">
+                    Enter Fullscreen Mode
                 </button>
             </div>
         </section>
 
-        <!-- Game Details Section -->
-        <div class="space-y-12">
-            <!-- Game Overview -->
-            <section class="bg-slate-800/50 backdrop-blur-sm rounded-xl shadow-lg p-6 md:p-8 border border-slate-700">
-                <h2 class="text-3xl font-bold text-white border-b border-slate-700 pb-4 mb-4">
-                    Game Overview
-                </h2>
-                <div class="text-gray-300 leading-relaxed space-y-4">
-                    <p>
-                        Dive into the heart of <strong class="font-semibold text-white">Monster Survivors</strong>, an action-packed roguelike adventure where your only goal is to withstand relentless waves of monsters. Drawing inspiration from modern classics, this game challenges you to strategically choose your weapons and upgrades on the fly.
-                    </p>
-                    <p>
-                         Each run is a new experience, with a vast arsenal of abilities to unlock and combine. Can you master the chaos and become the ultimate survivor?
-                    </p>
-                </div>
-            </section>
-            
-            <!-- Key Features - Redesigned with a card layout -->
-            <section>
-                <h2 class="text-3xl font-bold text-white text-center mb-8">
-                    Key Features
-                </h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <!-- Feature Card 1 -->
-                    <div class="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700 text-center transform transition-all duration-300 hover:scale-105 hover:border-blue-500">
-                        <div class="flex justify-center mb-4">
-                             <svg class="h-12 w-12 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m-7.5-2.962a3.75 3.75 0 015.962 0L14.25 18l-2.25-2.25a3.75 3.75 0 01-5.962 0L3.75 18l2.25-2.25m9.375-3a9.094 9.094 0 01-3.741.479 3 3 0 01-4.682-2.72M9 12.75h9.75M9 12.75a2.25 2.25 0 01-2.25-2.25V7.5a2.25 2.25 0 012.25-2.25h7.5a2.25 2.25 0 012.25 2.25v3a2.25 2.25 0 01-2.25 2.25H9z" /></svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-2">Endless Hordes</h3>
-                        <p class="text-gray-400">Battle an ever-increasing swarm of unique monsters with different attack patterns.</p>
+        <!-- 游戏详情区域：使用H2标签构建内容结构 -->
+        <section class="bg-white rounded-xl shadow-lg p-6 md:p-8">
+            <h2 class="text-2xl md:text-3xl font-bold text-slate-900 border-b border-slate-200 pb-4 mb-4">
+                Game Overview
+            </h2>
+            <div class="prose max-w-none text-slate-600 leading-relaxed space-y-4">
+                <p>
+                    Welcome to <strong class="font-semibold text-slate-800">Kingdom Battle 3D</strong>, a thrilling real-time strategy game that puts you in command of a stickman army. Your mission is to deploy your forces, manage your resources, and lead a calculated assault to capture the enemy's castle. With stunning 3D graphics and intuitive gameplay, every battle is a unique test of your strategic mind.
+                </p>
+            </div>
+
+            <h2 class="text-2xl md:text-3xl font-bold text-slate-900 border-b border-slate-200 pb-4 mt-8 mb-4">
+                Key Features
+            </h2>
+            <ul class="list-none space-y-4">
+                <li class="flex items-start">
+                    <svg class="h-6 w-6 text-blue-500 mr-3 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <div>
+                        <strong class="font-semibold text-slate-800">Strategic Gameplay:</strong>
+                        <span class="text-slate-600 block">Think on your feet! Manage your mana, spawn different types of units, and outsmart your opponent.</span>
                     </div>
-                    <!-- Feature Card 2 -->
-                    <div class="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700 text-center transform transition-all duration-300 hover:scale-105 hover:border-blue-500">
-                        <div class="flex justify-center mb-4">
-                            <svg class="h-12 w-12 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18" /></svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-2">Dynamic Evolution</h3>
-                        <p class="text-gray-400">Collect gems to level up and forge devastating ability synergies from random upgrades.</p>
+                </li>
+                <li class="flex items-start">
+                    <svg class="h-6 w-6 text-blue-500 mr-3 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <div>
+                        <strong class="font-semibold text-slate-800">Engaging 3D Battles:</strong>
+                        <span class="text-slate-600 block">Watch the battlefield come to life with vibrant 3D graphics and dynamic stickman animations.</span>
                     </div>
-                    <!-- Feature Card 3 -->
-                    <div class="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700 text-center transform transition-all duration-300 hover:scale-105 hover:border-blue-500">
-                        <div class="flex justify-center mb-4">
-                            <svg class="h-12 w-12 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" /></svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-2">Instant Action</h3>
-                        <p class="text-gray-400">Play instantly in your browser. No downloads or installation required.</p>
+                </li>
+                <li class="flex items-start">
+                    <svg class="h-6 w-6 text-blue-500 mr-3 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <div>
+                        <strong class="font-semibold text-slate-800">Multiple Levels:</strong>
+                        <span class="text-slate-600 block">Face increasingly challenging opponents and conquer a variety of maps on your path to glory.</span>
                     </div>
-                </div>
-            </section>
-        </div>
+                </li>
+            </ul>
+
+            <h2 class="text-2xl md:text-3xl font-bold text-slate-900 border-b border-slate-200 pb-4 mt-8 mb-4">
+                How to Play
+            </h2>
+             <ol class="list-decimal list-inside space-y-3 text-slate-600">
+                <li><strong class="font-semibold text-slate-800">Deploy Units:</strong> Click on the unit cards at the bottom of the screen to send your soldiers into battle.</li>
+                <li><strong class="font-semibold text-slate-800">Manage Mana:</strong> Keep an eye on your mana bar. It refills over time and is required to spawn new units.</li>
+                <li><strong class="font-semibold text-slate-800">Capture the Castle:</strong> Your objective is to overwhelm the enemy's defenses and destroy their main castle.</li>
+            </ol>
+        </section>
     </div>
     
-    <!-- Footer Section -->
+    <!-- 页脚区域 -->
     <footer class="text-center p-8 mt-8">
-        <p class="text-sm text-gray-500">&copy; 2024 weaponsgame.online. All Rights Reserved.</p>
+        <p class="text-sm text-slate-500">&copy; 2024 weaponsgame.online. All Rights Reserved.</p>
     </footer>
 
 </body>
 </html>
-```
-
