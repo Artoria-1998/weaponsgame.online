@@ -79,6 +79,12 @@
                 Command your stickman army, conquer enemy castles, and claim victory in this epic 3D strategy battle!
             </p>
         </header>
+        
+        <!-- 新增：移动端体验提示 -->
+        <div id="mobile-warning" class="hidden md:hidden bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 rounded-md mb-6" role="alert">
+            <p class="font-bold">Better on Desktop</p>
+            <p>This game is best experienced on a desktop computer with a keyboard and mouse.</p>
+        </div>
 
         <!-- 游戏Iframe区域：页面的核心 -->
         <section id="game-section" class="mb-8 md:mb-10">
@@ -87,12 +93,13 @@
                 <iframe 
                     src="https://cloud.onlinegames.io/games/2025/unity2/kingdom-battle-3d/index-og.html"
                     title="Kingdom Battle 3D Online Game"
+                    allow="fullscreen"
                     allowfullscreen>
                 </iframe>
             </div>
             <!-- 全屏按钮以提升用户体验 -->
             <div class="text-center mt-4">
-                 <button onclick="document.querySelector('iframe').requestFullscreen()" class="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300 focus:outline-none focus:ring-4 focus:ring-blue-300 shadow-lg">
+                 <button id="fullscreen-btn" class="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300 focus:outline-none focus:ring-4 focus:ring-blue-300 shadow-lg">
                     Enter Fullscreen Mode
                 </button>
             </div>
@@ -152,5 +159,32 @@
         <p class="text-sm text-slate-500">&copy; 2024 weaponsgame.online. All Rights Reserved.</p>
     </footer>
 
+    <script>
+        // 在文档加载完成后运行
+        document.addEventListener('DOMContentLoaded', function() {
+            const isMobile = window.innerWidth < 768;
+            const mobileWarning = document.getElementById('mobile-warning');
+            
+            // 如果是移动设备，显示警告信息
+            if (isMobile && mobileWarning) {
+                mobileWarning.classList.remove('hidden');
+            }
+
+            // 全屏按钮逻辑
+            const fullscreenBtn = document.getElementById('fullscreen-btn');
+            const gameIframe = document.querySelector('iframe');
+            if(fullscreenBtn && gameIframe) {
+                fullscreenBtn.addEventListener('click', function() {
+                    if (gameIframe.requestFullscreen) {
+                        gameIframe.requestFullscreen();
+                    } else if (gameIframe.webkitRequestFullscreen) { /* Safari */
+                        gameIframe.webkitRequestFullscreen();
+                    } else if (gameIframe.msRequestFullscreen) { /* IE11 */
+                        gameIframe.msRequestFullscreen();
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>
